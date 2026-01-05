@@ -1,0 +1,140 @@
+{
+  "doctor": {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "email": "sample.doctor@example.com",
+    "full_name": "Dr. Sample",
+    "specialization": "General",
+    "phone": "+1-555-0000",
+    "avatar_url": "",
+    "clinic_name": "Sample Clinic",
+    "clinic_address": "100 Demo St",
+    "created_at": "2026-01-01T00:00:00Z"
+  },
+  "patients": [
+    {
+      "id": "11111111-1111-1111-1111-111111111111",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "full_name": "John Smith",
+      "age": 45,
+      "gender": "Male",
+      "phone": "+1-555-0101",
+      "email": "john.smith@email.com",
+      "address": "123 Main St, New York, NY",
+      "blood_group": "A+",
+      "medical_history": "Hypertension, controlled with medication",
+      "status": "active",
+      "is_new": false,
+      "created_at": "2025-12-01T10:00:00Z"
+    },
+    {
+      "id": "22222222-2222-2222-2222-222222222222",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "full_name": "Sarah Johnson",
+      "age": 32,
+      "gender": "Female",
+      "phone": "+1-555-0102",
+      "email": "sarah.j@email.com",
+      "address": "456 Oak Ave, Brooklyn, NY",
+      "blood_group": "O+",
+      "medical_history": "No significant medical history",
+      "status": "active",
+      "is_new": true,
+      "created_at": "2026-01-02T09:00:00Z"
+    },
+    {
+      "id": "33333333-3333-3333-3333-333333333333",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "full_name": "Michael Brown",
+      "age": 58,
+      "gender": "Male",
+      "phone": "+1-555-0103",
+      "email": "mbrown@email.com",
+      "address": "789 Pine Rd, Queens, NY",
+      "blood_group": "B+",
+      "medical_history": "Type 2 Diabetes, managed with diet and medication",
+      "status": "active",
+      "is_new": false,
+      "created_at": "2025-11-20T14:30:00Z"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "44444444-4444-4444-4444-444444444444",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "patient_id": "11111111-1111-1111-1111-111111111111",
+      "appointment_date": "2026-01-05",
+      "appointment_time": "09:00",
+      "status": "completed",
+      "reason": "General checkup",
+      "is_request": false,
+      "created_at": "2026-01-04T08:00:00Z"
+    },
+    {
+      "id": "44444444-4444-4444-4444-444444444445",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "patient_id": "33333333-3333-3333-3333-333333333333",
+      "appointment_date": "2026-01-05",
+      "appointment_time": "11:00",
+      "status": "ongoing",
+      "reason": "Diabetes follow-up",
+      "is_request": false,
+      "created_at": "2026-01-04T09:00:00Z"
+    },
+    {
+      "id": "44444444-4444-4444-4444-444444444446",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "patient_id": "22222222-2222-2222-2222-222222222222",
+      "appointment_date": "2026-01-07",
+      "appointment_time": "14:00",
+      "status": "upcoming",
+      "reason": "Initial consultation",
+      "is_request": false,
+      "created_at": "2026-01-05T07:00:00Z"
+    }
+  ],
+  "doctor_notes": [
+    {
+      "id": "55555555-5555-5555-5555-555555555555",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "patient_id": "11111111-1111-1111-1111-111111111111",
+      "content": "BP improved; continue meds; follow-up in 3 months.",
+      "created_at": "2026-01-05T10:00:00Z",
+      "updated_at": "2026-01-05T10:00:00Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "66666666-6666-6666-6666-666666666666",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "patient_id": "33333333-3333-3333-3333-333333333333",
+      "diagnosis": "Type 2 Diabetes",
+      "medications": [
+        { "name": "Metformin", "dosage": "500mg", "frequency": "Twice daily", "duration": "30 days" }
+      ],
+      "instructions": "Take with meals.",
+      "created_at": "2026-01-04T11:00:00Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "77777777-7777-7777-7777-777777777777",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "patient_id": "11111111-1111-1111-1111-111111111111",
+      "amount": 150.0,
+      "status": "paid",
+      "payment_date": "2026-01-05T12:00:00Z",
+      "invoice_number": "INV-2026-001"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "88888888-8888-8888-8888-888888888888",
+      "doctor_id": "00000000-0000-0000-0000-000000000001",
+      "type": "appointment",
+      "title": "New Appointment Request",
+      "message": "Emily Davis requested allergy consultation",
+      "is_read": false,
+      "created_at": "2026-01-03T08:00:00Z"
+    }
+  ]
+}
